@@ -1,0 +1,171 @@
+.search-results-wrapper {
+    .search-results-no-results {
+        text-align: center;
+        background: #fff;
+        padding: 40px;
+        &>div {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        .search-wrapper {
+            text-align: center;
+            input {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+    .search-results-header {
+        background: #fff;
+        margin-bottom: 40px;
+        padding: 20px 0;
+        .search-results-found-text {
+            font-size: 22px;
+            color: #000;
+            font-family: "Avenir Next", sans-serif;
+            font-weight: 700;
+            letter-spacing: .015em;
+            margin: 0;
+            word-wrap: break-word;
+            line-height: 50px;
+            padding: 0 15px;
+            text-align: center;
+
+            span{
+                display: none;
+            }
+        }
+    }
+}
+.search-wrapper {
+    text-align: center;
+    width: 100%;
+    .search-wrapper-input {
+        position: relative;
+        display: inline-block;
+        @media(max-width: 768px) {
+            width: 100%;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            left: 2vw;
+            top: 50%;
+            transform: translateY(-50%);
+            background: url(/site/themes/instasize/img/icons/search.svg) no-repeat;
+            width: 1vw;
+            height: 1vw;
+            background-size: cover;
+            display: block;
+
+            @media(max-width: 768px) {
+                width: 2.5vw;
+                height: 2.5vw;
+            }
+
+            @media(max-width: 576px) {
+                width: 3.5vw;
+                height: 3.5vw;
+                left: 4vw;
+            }
+        }
+        input {
+            margin: 0;
+            @media(max-width: 768px) {
+                width: 100%;
+                font-size: 2.6vw;
+            }
+
+            @media(max-width: 576px) {
+                font-size: 12px;
+            }
+        }
+        .blog-search {
+            border-radius: 30px;
+            border: 1px solid #E5E5E5;
+            font-family: $font_matter;
+            font-weight: $font_medium;
+            color: #7C7C7C;
+            padding-left: 4.5vw;
+            font-size: 18px;
+            &::placeholder {
+                color: #7C7C7C;
+                font-size: 18px;
+                @media(max-width: 768px) {
+                    font-size: 2.6vw;
+                }
+
+                @media(max-width: 576px) {
+                    font-size: 12px;
+                }
+            }
+            @media(max-width: 768px) {
+                margin: 4vw 0;
+                border-radius: 6px;
+                padding: 3vw 2vw 2vw 6vw;
+            }
+
+            @media(max-width: 576px) {
+                padding: 5vw 2vw 4vw 12vw;
+                font-size: 12px;
+            }
+        }
+        .loading-wrapper {
+            position: absolute; 
+            display: none;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255,255,255, 0.8);
+            .loading-spin-wrapper {
+                display: block;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                top: 50%;
+                left: 50%;
+                z-index: 2;
+                .loading-spinner {
+                    border: 2px solid #f3f3f3;
+                    border-top: 2px solid #00F;
+                    border-radius: 50%;
+                    width: 20px;
+                    height: 20px;
+                    display: inline-block;
+                    animation: spin 2s linear infinite;
+                    z-index: 3;
+                }
+            }
+        }
+        &.loading {
+            .loading-wrapper {
+                display: block;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 767px) {
+    .search-results-wrapper {
+        .search-results-header {
+            .search-results-found-text {
+                text-align: left;
+                    
+                span{
+                    display: inline;
+                }
+            }
+        }
+    }
+
+    .search-wrapper {
+        .search-wrapper-input {
+            width: 100%;
+            input {
+                width: 100%;
+            }
+        }
+    }
+}

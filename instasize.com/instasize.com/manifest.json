@@ -1,0 +1,16 @@
+{
+    "short_name": "Instasize",
+    "name": "Instasize Website",
+    "icons": [
+      {
+        "src": "/site/themes/blue/img/instasize-icon-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/?utm_source=a2hs",
+    "background_color": "#fff",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#00f"
+  }

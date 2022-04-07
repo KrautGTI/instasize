@@ -1,0 +1,129 @@
+.footer_container {
+  padding: 5vw;
+}
+
+.footer-row{
+  z-index: 1;
+  position: relative;
+
+  .footer-menu-wrapper {
+    margin: 0;
+
+    @media(max-width: 576px) {
+      display: none;
+    }
+  }
+
+  .footer-menu {
+    margin-bottom: 0;
+
+    @media (max-width:767px) {
+      margin-bottom: 30px;
+    }
+    
+    &--item {
+
+      @media (max-width:767px) {
+        text-align: center;
+      }
+
+      &--link {
+        font-family: $font_matter;
+        font-weight: $font_medium;
+        font-size: 15px;
+        margin-top: 0;
+        margin-bottom: 30px;
+
+        &.black {
+          color: #000;
+        }
+
+        &.grey {
+          color: #898989;
+        }
+      }
+    }
+
+    @media (min-width:767px) {
+      display: inline-block;
+      margin-right: 100px;
+    }
+  }
+
+    .copyright {
+      font-family: $font_matter;
+      font-weight: $font_medium;
+      font-size: 15px;
+      color: #a5a5a5;
+
+      @media (max-width:767px) {
+        text-align: center;        
+      }
+
+
+      @media (min-width:767px) {
+        float: right;
+      }
+
+      @media (max-width: 576px) {
+        text-align: center;
+        line-height: 20px;
+      }
+
+    }
+    .social {
+      margin-top: 0;
+      margin-bottom: 10px;
+
+      @media(max-width: 576px) {
+        display: none;
+      }
+
+      &--list {
+        display: flex;
+        justify-content: center;
+
+        &--item {
+          display: inline-block;
+          margin-right: 21px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          &--link {
+            width: 16px;
+            height: 16px;
+            display: block;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            &.instagram {
+              background-image: url(/site/themes/instasize/img/icons/instagram.svg);
+            }
+  
+            &.twitter {
+              background-image: url(/site/themes/instasize/img/icons/twitter.svg);
+            }
+  
+            &.facebook {
+              background-image: url(/site/themes/instasize/img/icons/facebook.svg);
+            }
+  
+            &.youtube {
+              background-image: url(/site/themes/instasize/img/icons/youtube.svg);
+            }
+          }
+        }
+      }
+      
+      @media (min-width:767px) {
+        float: right;
+        margin-bottom: 60px;
+      }
+
+      @media (max-width: 768px){
+        text-align: center;
+      }
+    }
+}

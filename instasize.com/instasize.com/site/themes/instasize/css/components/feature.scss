@@ -1,0 +1,150 @@
+.features_container {
+  padding: 20vh 0 10vh;
+
+  &--post_wrapper {
+    padding: 6vw 9vw 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &--post {
+      max-width: calc(50% - 24px);
+      text-align: center;
+      margin-bottom: 6vw;
+
+      &--img {
+        width: 100%;
+        margin-bottom: 3vw;
+      }
+
+      &--title {
+        color: #000;
+        font-weight: $font_medium;
+        font-size: 1.3vw;
+      }
+
+      &--link {
+        color: #898989;
+        font-size: 1.3vw;
+        font-weight: $font_medium;
+
+        &--arrow {
+          margin-right: .5vw;
+        }
+      }
+    }
+  }
+
+  &--banner {
+    background: #000;
+    height: 100vh;
+    min-height: 500px;
+    display: block;
+
+    &--content {
+      text-align: center;
+      position: relative;
+      top: 50%;
+
+      &--title {
+        color: #fff;
+        font-family: $font_tiempos;
+        font-size: 6vw;
+        font-weight: $font_regular;
+        text-align: center;
+        letter-spacing: 0;
+        font-variant-ligatures: none;
+        -moz-font-variant-ligatures: none;
+
+        &.animate__fade {
+          opacity: 0;
+        }
+      }
+
+      &--link {
+        color: #fff;
+        display: block;
+        font-size: 1.3vw;
+        font-weight: $font_medium;
+        position: absolute;
+        bottom: -10vh;
+        left: 50%;
+        transform: translateX(-50%);
+
+        &.animate__fade {
+          opacity: 0;
+        }
+
+        &:hover {
+          color: #fff;
+        }
+
+        &--arrow {
+          margin-right: .5vw;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .features_container {
+    &--post_wrapper {
+  
+      &--post {
+        max-width: 100%;
+        margin-bottom: 14vw;
+
+        &--img {
+          margin-bottom: 8vw;
+        }
+        
+        &--title,
+        &--link {
+          font-size: 3.5vw;
+        }
+
+        &--title {
+          margin-bottom: 3vw;
+        }
+      }
+    }
+
+    &--banner {
+      &--content {
+        &--link {
+          font-size: 3.5vw;
+          bottom: -6vh;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .features_container {
+    padding: 10vh 0 0;
+    
+    &--post_wrapper {
+      padding: 14vw 9vw 0;
+
+      &--post {
+        &--img {
+          margin-bottom: 6vw;
+        }
+
+        &--title {
+          margin-bottom: 1vw;
+        }
+      }
+    }
+
+    &--banner {
+      &--content {
+        &--title {
+          font-size: 10vw;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.grid {
+  margin-bottom: 120px;
+
+  @media (min-width:767px) {
+
+  }
+
+  h2 {
+    font-weight: $font_bold;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 120px;
+    padding-bottom: 50px;
+
+    @media (max-width:767px) {
+      font-size: 40px;
+      padding-top: 60px;
+      padding-bottom: 0px;
+    }
+  }
+
+  .tool {
+    font-family: $font_family;
+    color: #000;
+    text-align: center;
+    padding: 30px;
+
+    @media (max-width:767px) {
+
+    }
+    .grid-icon {
+      padding: 20px;
+    }
+    .grid-name {
+      font-weight: $font_bold;
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    .grid-description {
+      font-size: 18px;
+    }
+  }
+}

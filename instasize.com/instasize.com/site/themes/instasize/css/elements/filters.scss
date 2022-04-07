@@ -1,0 +1,53 @@
+.filter-cards {
+  box-sizing: border-box;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.filter-card {
+  display: inline-block;
+  margin: 8px 6px;
+  overflow: hidden;
+  transition: transform .2s;
+  position: relative;
+
+  .filter-image {
+    height: 80px;
+    width: 80px;
+    background-color: #ddd;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .filter-name {
+    font-family: $font_family;
+    font-weight: $font_bold;
+    font-size: 0.8em;
+    letter-spacing: 0.5px;
+    transition: background-color 0.2s;
+    text-align: center;
+    color: #FFF;
+    padding: 6px 0;
+  }
+
+  .blue {
+    background-color: #0000FF;
+  }
+  .cyan {
+    background-color: #40E8FF;
+  }
+  .purple {
+    background-color: #9131D1;
+  }
+  .faded-blue {
+    background-color: #3E47F0;
+  }
+  .red {
+    background-color: #F95889;
+  }
+}

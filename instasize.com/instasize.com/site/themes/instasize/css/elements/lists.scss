@@ -1,0 +1,41 @@
+.feature-list-container {
+  text-align: center;
+
+  h2 {
+    font-size: 44px;
+    font-weight: $font_bold;
+    margin-top: 60px;
+    margin-bottom: 80px;
+
+    @media (max-width:767px) {
+      margin-top: 20px;
+      margin-bottom: 60px;
+    }
+  }
+
+  .feature-list {
+
+    .feature-list-item {
+      list-style-type: none;
+      text-align: left;
+      padding: 30px;
+      background-color: #FFF;
+      margin-bottom: 20px;
+      margin-right: 20px;
+      width: 23%;
+
+      @media (max-width:767px) {
+        width: 100%;
+      }
+
+      .feature-list-number {
+        font-size: 32px;
+        font-weight: $font_bold;
+      }
+
+      .feature-list-text {
+        font-size: 20px;
+      }
+    }
+  }
+}

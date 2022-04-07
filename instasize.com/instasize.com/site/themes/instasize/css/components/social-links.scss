@@ -1,0 +1,178 @@
+.facebook-button {
+  background: #3B5998;
+}
+
+.twitter-button {
+  background: #55ACEE;
+}
+
+.pinterest-button {
+  background: #BD081C;
+}
+
+.linkedin-button {
+  background: #0077B5;
+}
+
+.email-button {
+  background: #707070;
+}
+
+.sms-button {
+  background: #2998FC;
+}
+
+.facebook-button:hover,.twitter-button:hover,.pinterest-button:hover,.linkedin-button:hover,.email-button:hover,.sms-button:hover {
+  background: #000;
+}
+
+.article-share {
+
+  // text-align: left;
+  margin-top: 40px;
+  margin-bottom: 50px;
+
+  .social-item {
+    -webkit-flex-basis: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+    display: inline-block;
+
+    .u-w-xs-100 {
+      width: 100% !important;
+    }
+    .link-button {
+      border-radius: 3px;
+      color: #FFF !important;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 25px;
+      padding: 12px 40px;
+      height: 40px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .fa-facebook {
+      margin-right: 10px;
+    }
+
+    .fa-twitter {
+      margin-right: 10px;
+    }
+
+    .name-lg{
+
+      @media (min-width:767px) {
+      }
+
+      @media (max-width:767px) {
+        display: none;
+      }
+    }
+
+    .name-md{
+
+      @media (min-width:767px) {
+        display: none;
+      }
+
+      @media (max-width:767px) {
+
+      }
+    }
+  }
+}
+
+.top-social-links {
+
+  .lg-share {
+
+    @media (max-width:767px) {
+      display: none;
+    }
+
+  }
+
+  .mobile-share {
+
+    @media (min-width:767px) {
+      display: none;
+    }
+
+  }
+
+  margin-top: 20px;
+
+  ul {
+
+    li {
+      display: inline-block;
+      margin-right: 10px;
+      width: 10%;
+
+      @media (min-width:767px) {
+        width: 15%;
+      }
+
+      @media (max-width:767px) {
+        margin-right: 0px;
+      }
+
+      .top-social-button {
+
+        border-radius: 2px;
+        text-align: center;
+        height: 30px;
+        line-height: 33px;
+
+        a {
+          color: #fff;
+        }
+
+        svg {
+          color: #fff;
+        }
+
+
+      }
+
+    }
+
+  }
+}
+
+.clear-social-links {
+
+  margin-left: 10px;
+  margin-bottom: 25px;
+
+  @media (min-width:767px) {
+    margin-bottom: 30px;
+  }
+
+  ul {
+
+    li {
+
+      display: inline-block;
+      width: 5%;
+      margin-right: 10px;
+
+      @media (min-width:767px) {
+        width: 3%;
+      }
+
+      a {
+        color: #fff;
+      }
+
+      a:hover{
+        opacity: 0.7;
+      }
+
+    }
+
+  }
+}

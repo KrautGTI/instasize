@@ -1,0 +1,26 @@
+.paging {
+    text-align: center;
+    padding: 0 0 6vw;
+    display: flex;
+    justify-content: space-between;
+
+    &__arrow {
+        color: $black;
+        display: inline-block;
+        margin: 0 5px;
+        font-family: $font_matter;
+        font-weight: $font_bold;
+
+        &--disabled{
+            color: #000 !important;
+        }
+    }
+
+    &__text {
+
+    }
+
+    &__info {
+
+    }
+}

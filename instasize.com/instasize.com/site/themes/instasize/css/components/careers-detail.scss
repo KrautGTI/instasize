@@ -1,0 +1,273 @@
+.job_listing {
+  &--head {
+    padding: 28vh 0 10vh;
+
+    &--title {
+      color: #000;
+      text-align: center;
+      font-size: 4vw;
+      font-family: $font_tiempos;
+      letter-spacing: 0.001px;
+      font-variant-ligatures: none;
+      -moz-font-variant-ligatures: none;
+      font-weight: $font_regular;
+    }
+  }
+
+  &--about {
+    padding: 9vh 9vw 6vh;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4vw;
+
+    &--block {
+      &--left {
+        width: 50vw;
+        margin-right: 10vw;
+      }
+
+      &--right {
+        width: 40vw;
+
+        .text_semibold {
+          font-weight: $font_semibold;
+        }
+      }
+
+      &--text {
+        margin-bottom: 3.4vh;
+        font-weight: $font_medium;
+      }
+
+      &--list {
+        padding-left: 2vw;
+        margin-bottom: 6vh;
+
+        &--item {
+          color: #898989;
+          margin-bottom: 3.4vh;
+          padding-left: 1.6vw;
+          font-weight: $font_regular;
+          position: relative;
+
+          &:before {
+            content: "";
+            width: .6vw;
+            height: .6vw;
+            background: #898989;
+            border-radius: 50%;
+            position: absolute;
+            top: .8vw;
+            left: 0;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  &--form {
+    padding: 0 9vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--field {
+      margin-bottom: 2.4vh;
+      padding: 2.4vh 3vw;
+      background: #fff;
+      border: 1px solid #E5E5E5;
+      border-radius: 6px;
+      font-size: 1.4vw;
+      color: #898989;
+      width: 100%;
+      font-weight: $font_semibold;
+
+      &::placeholder {
+        color: #000;
+      }
+
+      &--file {
+        margin-bottom: 12vh;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        color: #000;
+
+        &--button {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 3vw;
+          background: #F5F4F4;
+          border: 1px solid #E4E4E4;
+          cursor: pointer;
+          padding: .4vw 4vw;
+          border-radius: 2px;
+          color: #000;
+          font-weight: $font_medium;
+        }
+
+        &--input {
+          display: none;
+        }
+      }
+    }
+
+    .job_listing--form--submit {
+      background-color: #000;
+      color: #fff;
+      font-weight: $font_semibold;
+      padding: 1.4vw 3vw;
+      display: inline-block;
+      margin-bottom: 12vh;
+      font-size: 1.4vw;
+      border-radius: 2px;
+      text-transform: none;
+      cursor: pointer;
+    }
+  }
+
+  &--notification {
+    color: #2E5EFF;
+    padding: 1.4vw 3vw;
+    background: #E4E7F8;
+    border: 1px solid #2E5EFF;
+    border-radius: 2px;
+    text-align: center;
+    max-width: 50vw;
+    margin: 0 auto 12vh;
+    font-size: 1.6vw;
+    font-weight: $font_semibold;
+  }
+
+  &--bottom {
+    padding: 0 22vw 8vh;
+
+    &--text {
+      color: #898989;
+      text-align: center;
+      font-size: 1.4vw;
+      font-weight: $font_regular;
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .job_listing {
+    &--about {
+      padding: 4vh 9vw 2vh;
+      flex-direction: column;
+
+      &--block {
+        &--left,
+        &--right {
+          width: 100%;
+        }
+
+        &--left {
+          margin-bottom: 4vh;
+        }
+
+        &--text {
+          font-size: 2.6vw;
+        }
+  
+        &--list {
+          padding-left: 3vw;
+
+          &--item {
+            font-size: 2.6vw;
+            margin-bottom: 2vh;
+          }
+        }
+      }
+    }
+
+    &--form {
+      &--field {
+        font-size: 2.6vw;
+        padding: 1.4vh 3vw;
+        margin-bottom: 1.4vh;
+
+        &--file {
+          margin-bottom: 8vh;
+        }
+      }
+
+      .job_listing--form--submit {
+        font-size: 2.6vw;
+        margin-bottom: 8vh;
+      }
+    }
+
+    &--notification {
+      font-size: 2.6vw;
+      max-width: 100vw;
+    }
+
+    &--bottom {
+      padding: 0 9vw 8vh;
+
+      &--text {
+        font-size: 2.6vw;
+      }
+    }
+  }
+}
+
+@media(max-width: 576px) {
+  .job_listing {
+    &--head {
+      padding: 22vh 0 0vh;
+
+      &--title {
+        font-size: 10vw;
+      }
+    }
+
+    &--about {
+      &--block {
+        &--left {
+          margin-bottom: 4vh;
+        }
+
+        &--text {
+          font-size: 3.6vw;
+          margin-bottom: 2.4vh;
+        }
+  
+        &--list {
+          padding-left: 5vw;
+
+          &--item {
+            font-size: 3.6vw;
+            margin-bottom: 1.6vh;
+          }
+        }
+      }
+    }
+
+    &--form {
+      &--field {
+        font-size: 3.6vw;
+      }
+
+      .job_listing--form--submit {
+        font-size: 3.6vw;
+      }
+    }
+
+    &--notification {
+      font-size: 3.6vw;
+    }
+
+    &--bottom {
+      padding: 0 9vw 8vh;
+
+      &--text {
+        font-size: 3.6vw;
+      }
+    }
+  }
+}

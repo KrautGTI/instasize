@@ -1,0 +1,218 @@
+.button-spacing {
+
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+
+  .button {
+
+    background: #0000ff;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+
+    &:hover {
+      background-color: #3f3ffd;
+    }
+
+    @media (max-width:767px) {
+      display: block;
+      letter-spacing: 1px;
+      font-family: $font_family;
+      font-weight: $font_bold;
+      font-size: 15px;
+      padding: 15px 40px 15px 40px;
+      box-shadow: 0 4px 8px 0 rgba(63, 63, 253, 0.2), 0 6px 20px 0 rgba(63, 63, 253, 0.19);
+    }
+
+    @media (min-width:767px) {
+      padding: 18px 40px 18px 40px;
+      letter-spacing: 1px;
+      font-family: $font_family;
+      font-weight: $font_bold;
+      font-size: 15px;
+      box-shadow: 0 4px 8px 0 rgba(63, 63, 253, 0.2), 0 6px 20px 0 rgba(63, 63, 253, 0.19);
+    }
+  }
+}
+
+.primary-button {
+  background: #00f;
+  color: #fff;
+  border-radius: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  font-size: 16px;
+  font-weight: $font_medium;
+  padding: 10px 15px 10px 15px;
+
+  &:hover {
+    background: #000;
+    color: #fff;
+  }
+}
+
+.secondary-button {
+  background: #eaeaea;
+  color: #000;
+  border-radius: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  font-size: 16px;
+  font-weight: $font_medium;
+  padding: 10px 15px 10px 15px;
+
+  &:hover {
+    background: #000;
+    color: #fff;
+  }
+}
+
+.button {
+
+  background: #0000ff;
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+
+  &:hover {
+    background-color: #3f3ffd;
+  }
+
+  @media (max-width:767px) {
+    display: block;
+    letter-spacing: 1px;
+    font-family: $font_family;
+    font-weight: $font_bold;
+    font-size: 15px;
+    padding: 15px 40px 15px 40px;
+    box-shadow: 0 4px 8px 0 rgba(63, 63, 253, 0.2), 0 6px 20px 0 rgba(63, 63, 253, 0.19);
+  }
+
+  @media (min-width:767px) {
+    padding: 18px 40px 18px 40px;
+    letter-spacing: 1px;
+    font-family: $font_family;
+    font-weight: $font_bold;
+    font-size: 15px;
+    box-shadow: 0 4px 8px 0 rgba(63, 63, 253, 0.2), 0 6px 20px 0 rgba(63, 63, 253, 0.19);
+  }
+
+  input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+  }
+}
+
+.download-button {
+  align-self: center;
+  background: #00F;
+  color: #fff !important;
+  width: 200px;
+  padding: 15px;
+  cursor:pointer;
+  border-radius: 4px;
+
+  &:hover {
+  background-color: #3f3ffd;
+  }
+}
+
+.og-btn {
+  border: 2px dashed #292929;
+  margin-top: 8px;
+}
+
+.crop-btn {
+  border: none;
+}
+
+.ratio-change {
+  opacity: 0.5;
+  background: none;
+  margin-right: 20px;
+  font-weight: $font_medium;
+  font-size: 20px;
+  border-radius: 2px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1.0;
+  }
+
+  svg {
+    margin-top: 2px;
+    font-size: 28px;
+  }
+
+  .crop-label {
+    font-size: 14px;
+  }
+
+  &.ratio-change-selected{
+    opacity: 1;
+  }
+}
+
+#crop-submit {
+  margin-top: 10px;
+  border: 2px solid #00F;
+  background: #00F;
+  color: #FFF;
+  border-radius: 2px;
+  margin-right: 20px;
+  font-weight: $font_bold;
+  font-size: 14px;
+  width: 70px;
+  height: 30px;
+  cursor: pointer;
+}
+
+#crop-reset {
+  border: 2px solid #00F;
+  background: none;
+  color: #00F;
+}
+
+.crop-button {
+  margin-top: 10px;
+  border-radius: 2px;
+  font-size: 14px;
+  width: 70px;
+  height: 30px;
+  font-weight: $font_bold;
+  cursor: pointer;
+}
+
+.application-buttons {
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+}
+
+.positions-button {
+
+  @media (min-width: 767px) {
+    display: none;
+  }
+
+}

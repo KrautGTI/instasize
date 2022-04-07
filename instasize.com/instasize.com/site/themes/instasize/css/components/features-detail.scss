@@ -1,0 +1,149 @@
+.feature-details-hero {
+
+  margin-bottom: 120px;
+
+  h1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: $font_family;
+    font-weight: $font_bold;
+  }
+
+  h3 {
+    font-family: $font_family;
+    font-weight: $font_medium;
+  }
+
+  p {
+    margin-top: 20px;
+  }
+
+
+  @media (min-width:767px) {
+    h1 {
+      font-size: 80px;
+      text-align: left;
+    }
+
+    h3 {
+      font-size: 44px;
+      text-align: center;
+    }
+
+    p {
+      margin-left: 6rem;
+      padding: 20px 0;
+      font-size: 22px;
+      line-height: 1.875rem;
+      text-align: left;
+      word-wrap: break-word;
+      width: 88%;
+    }
+  }
+  @media (max-width:767px) {
+
+    h1 {
+      font-size: 44px;
+    }
+
+    h3 {
+      font-size: 34px;
+      text-align: left;
+    }
+
+    p {
+      margin-left: 0;
+      font-size: 20px;
+    }
+  }
+}
+
+.feature-details {
+
+  .row {
+    margin-bottom: 120px;
+
+    @media (max-width:767px) {
+      margin-bottom: 50px;
+
+    }
+  }
+
+  h2 {
+    margin-top: 40px;
+    font-family: $font_family;
+    font-weight: $font_bold;
+  }
+
+  h3 {
+    font-family: $font_family;
+    font-weight: $font_medium;
+  }
+
+  p {
+    padding: 20px 0;
+    line-height: 1.875rem;
+    text-align: left;
+    word-wrap: break-word;
+  }
+
+  @media (min-width:767px) {
+    h2 {
+      font-size: 60px;
+      text-align: left;
+    }
+
+    h3 {
+      font-size: 44px;
+      text-align: center;
+    }
+
+    p {
+      margin-left: 1rem;
+      padding: 20px 0;
+      font-size: 22px;
+      line-height: 1.875rem;
+      text-align: left;
+      width: 88%;
+    }
+  }
+
+  @media (max-width:767px) {
+
+    h2 {
+      font-size: 44px;
+    }
+
+    h3 {
+      font-size: 34px;
+      text-align: left;
+    }
+
+    p {
+      margin-left: 0;
+      font-size: 20px;
+    }
+
+  }
+}
+
+.feature-how-details {
+
+  h3 {
+    font-family: $font_family;
+    font-weight: $font_bold;
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+
+    @media (max-width:767px) {
+      text-align: left;
+    }
+  }
+
+  .step {
+    margin-bottom: 40px;
+  }
+
+
+}

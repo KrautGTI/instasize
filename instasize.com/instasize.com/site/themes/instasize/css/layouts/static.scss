@@ -1,0 +1,40 @@
+.static {
+  margin-bottom: 100px;
+
+  h1 {
+    font-family: $font_family;
+    font-weight: $font_bold;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-family: $font_family;
+    font-weight: $font_bold;
+    font-size: 18px;
+  }
+
+  p {
+    font-family: $font_family;
+    font-weight: $font_regular;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  a {
+    font-family: $font_family;
+    font-weight: $font_bold;
+    font-size: 16px;
+    color: #000;
+    background:#eee
+  }
+
+  a:hover {
+    color: white;
+    background: #00F;
+  }
+
+  li {
+    font-size: 14px;
+    color: #555;
+  }
+}

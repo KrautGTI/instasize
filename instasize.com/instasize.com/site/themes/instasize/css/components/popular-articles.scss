@@ -1,0 +1,75 @@
+.popular-articles {
+
+  margin-bottom: 50px;
+
+  // @media (min-width:767px) {
+  //   border-left: 1px solid #EEE;
+  //   padding-left: 20px;
+  // }
+  //
+  // @media (max-width:767px) {
+  //
+  // }
+
+  h3 {
+    font-family: $font_family;
+    font-weight: $font_bold;
+    font-size: 25px;
+  }
+
+  .articles-list {
+
+    .story {
+      min-height: 72px;
+      padding-left: 88px;
+      position: relative;
+
+          h4 {
+            font-family: $font_family;
+            font-weight: $font_bold;
+            font-size: 14px;
+
+            a {
+              font-family: $font_family;
+              font-weight: $font_bold;
+              font-size: 13px;
+              line-height: 18px;
+              color: #000;
+            }
+
+            a:hover {
+              color: #777;
+            }
+
+          }
+
+          .story-image {
+            display: block;
+            background-color: #f1f1f1;
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 100%;
+            background-size: cover;
+            left: 0;
+            padding-top: 72px;
+            position: absolute;
+            top: 0;
+            width: 72px;
+          }
+
+          .article-type {
+            font-family: $font_family;
+            font-weight: $font_bold;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #0000ff;
+          }
+
+    }
+
+    li {
+      padding: 12px 0px 12px 0px;
+      max-width: 100%;
+    }
+  }
+}
